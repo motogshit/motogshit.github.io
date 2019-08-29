@@ -158,7 +158,7 @@ body {
   /*===== FIXED BACKGROUND IMG DARK =====*/
 
 #fixed {
-    background-image: url('img/fixed/apple.png');
+    background-image: url('./img/fixed/landing.jpg');
     z-index: -1;
   }
   .dark {
@@ -246,7 +246,7 @@ body {
     margin-right: 2px;
 }
   #fixed-2 {
-    background-image: url('https://www.infoescola.com/wp-content/uploads/2010/08/husky-siberiano_71212480.jpg');
+    background-image: url('./img/fixed/puppy-landing.jpg');
     z-index: -1;
   }
   .light {
@@ -410,10 +410,10 @@ footer {
       font-size: 1.8rem;
     }
     #fixed {
-      background-image: url('img/fixed/apple-mobile.png');
+      background-image: url('./img/fixed/landing.jpg');
     }
     #fixed-2 {
-      background-image: url('img/fixed/office-mobile.png');
+      background-image: url('./img/fixed/puppy-landing.jpg');
     }
     footer {
       background: url('img/footer/footer-mobile.png') no-repeat;
