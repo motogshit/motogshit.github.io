@@ -1,474 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/arrow.css">
-    <link rel="stylesheet" href="css/fixed.css">
-    <link rel="stylesheet" href="css/waypoints.css">
-    <title>Night Wolf FP</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="/food_96px.png">
+<!-- Bootstrap CSS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Style.css -->
+<link rel="stylesheet" href="/css/style.css">
+<!-- Plugins.css -->
+<link rel="stylesheet" href="/css/plugins.css">
+<!-- Google Fonts https://fonts.google.com/ -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+<!-- Animate.css https://cdnjs.com/libraries/animate.css/
+    https://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+		http://owlcarousel2.github.io/OwlCarousel2/ -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<!-- jQuery https://code.jquery.com/ -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+<title>Cozinha</title>
+</head>
 <body data-spy="scroll" data-target="#navbarResponsive">
 
-    <!-- Start Home Section -->
-    <div id="home">
+    <!-- Inicio da sessão HOME ou pagina inicial -->
+	<div id="home">
 
-        <!-- Start Navigation -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand"><img src="/img/nuno.png" alt="" srcset=""></a>
+            <!-- Barra de navegação -->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a href="#home" class="navbar-brand"><img src="/food_96px.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link">Pagina Inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#aboutus" class="nav-link"> Sobre-nós </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#country1" class="nav-link">Pais 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#country2" class="nav-link">Pais 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#country3" class="nav-link">Pais 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#country4" class="nav-link">Pais 4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">Informações</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </nav>
+            <!-- Fim da barra de navegação -->
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#dogs">Cães Adultos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#puppys">Filhotes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contato</a>
-                        </li>
-
-                    </ul>
+            <!-- Inicio do plano de fundo na pagina inicial -->
+		    <div class="landing">
+                <div class="home-wrap">
+                    <div class="home-inner"></div>
                 </div>
             </div>
-        </nav>
-        <!-- End Navigation -->
+            <!-- Fim do plano de fundo na pagina inicial -->
+    
+            <!-- Start Landing Page Caption -->
+            <div class="caption text-center text-light text-uppercase">
+    
+                <h1 class="font-weight-bold os-animation" data-animation="fadeInUp" data-delay=".6s">Bem-vindo ao <span class="text-nuno">Ishibento</span></h1>
+                <h3 class="os-animation" data-animation="fadeInUp" data-delay=".8s">Restaurante de comidas estrangeiras</h3>
+                <a href="#aboutus" class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="fadeInUp" data-delay="1s">Saber mais?</a>
+    
+            </div>
+            <!-- End Landing Page Caption -->
+    
+            <!-- Start Bouncing Down Arrow -->
+            <a href="#aboutus" class="down-arrow text-center">
+                <div class="arrow d-none d-md-block">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </a>
+            <!-- End Bouncing Down Arrow -->
     </div>
+    
+    
+    <!-- Start Features Section -->
+	<div id="aboutus" class="offset">
 
-    <!--- Start Landing Page Image -->
-    <div class="landing">
-        <div class="home-wrap">
-            <div class="home-inner">
-            </div>
-        </div>
-    </div>
-    <!--- End Landing Page Image -->
-
-    <!--- Start Landing Page Caption -->
-    <div class="caption text-center">
-
-        <div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
-            <h1>Seja bem-vindo!</h1>
-        </div>
-
-        <div class="os-animation" data-animation="bounceInUp" data-delay=".8s">
-            <h3>Encontre seu melhor amigo aqui!</h3>
-        </div>
-
-        <div class="os-animation" data-animation="bounceInUp" data-delay="1s">
-            <a class="btn btn-outline-light btn-lg" href="#puppys">Vamos começar?</a>
-        </div>
-
-    </div>
-    <!--- End Landing Page Caption -->
-
-    <!--- Bouncing Down Arrow -->
-    <a class="down-arrow" href="#dogs">
-        <div class="arrow bounce d-none d-md-block">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-        </div>
-    </a>
-
-    <!-- End Home Section -->
-
-    <!-- Start Adult Dogs Section -->
-    <div class="offset" id="dogs">
-        <!---Start Animation -->
-        <div class="os-animation" data-animation="fadeInUp">
-            <div class="narrow text-center">
-                <div class="col-12">
-                    <h1>Canil Night Wolf FP</h1>
-                    <p class="lead">Nós somos um canil expecializado em huskys siberiano de raça pura e temos alguns
-                        filhotinhos para você que busca um melhor amigo na jornada da vida</p>
-                    <a class="btn btn-secondary btn-sm" href="#contact">Entre em Contato</a>
-                    <a class="btn btn-turquoise btn-sm" href="#puppys">Veja nossos filhotes</a>
+            <!-- Start Theme Heading -->
+            <div class="row text-center py-4 os-animation justify-content-center" data-animation="fadeInUp">
+                <div class="col-11 col-md-10 col-lg-9">
+                    <h1>Sobre nós do <span class="text-nuno">Ishibento.com.br</span></h1>
+                    <br>
+                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
             </div>
+            <!-- End Theme Heading -->
+    
         </div>
-        <div class="row padding">
+        <!-- End of Features Section -->
 
-            <div class="col-12 os-animation" data-animation="fadeInUp">
-                <h3 class="heading">Nossos Cães Adultos</h3>
-                <div class="heading-underline"></div>
-            </div>
 
-        </div>
-        <!--- End Row -->
+    <!-- Inicio da sessao PAIS 1 -->
+	<div id="country1" class="offset">
 
-        <!--- Start Portfolio Grid -->
-        <div class="container-fluid">
-            <div class="row no-padding">
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="os-animation" data-animation="bounceInLeft" data-delay=".2s">
-                        <div class="portfolio-item">
-                            <a href="./img/adultDogs/IMG-20190817-WA0002.jpg" data-lightbox="olaf"
-                                data-title="Este é OLAF">
-                                <img class="example-image" src="./img/adultDogs/IMG-20190817-WA0002.jpg" alt=".">
-
-                            </a>
-                        </div>
+            <!-- Inicio do plano de fundo fixo  -->
+            <div class="fixed">
+    
+                <div class="row light">
+    
+                    <div class="col-12 os-animation" data-animation="fadeInUp">
+                        <h3 class="heading">Comidas chinesas</h3>
+                        <div class="heading-underline"></div>
                     </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="os-animation" data-animation="bounceInLeft">
-                        <div class="portfolio-item">
-                            <a href="./img/portfolio/2.png" data-lightbox="example-set">
-                                <img class="example-image" src="https://img.olx.com.br/images/35/355918009833333.JPG"
-                                    alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="os-animation" data-animation="bounceInRight">
-                        <div class="portfolio-item">
-                            <a href="./img/portfolio/3.png" data-lightbox="example-set">
-                                <img class="example-image" src="https://img.olx.com.br/images/35/355918009833333.JPG"
-                                    alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="os-animation" data-animation="bounceInRight" data-delay=".2s">
-                        <div class="portfolio-item">
-                            <a href="./img/portfolio/4.png" data-lightbox="example-set">
-                                <img class="example-image" src="https://img.olx.com.br/images/35/355918009833333.JPG"
-                                    alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-            <!--- End Row -->
-        </div>
-        <!--- End Container -->
-        <!--- End Portfolio Grid -->
-        <!--- End Animation -->
-    </div>
-
-    <div id="puppys" class="offset">
-
-        <!--- Start Fixed Background IMG Light -->
-        <div class="fixed-background">
-
-            <div class="row light">
-
-                <div class="col-12 os-animation" data-animation="fadeInUp">
-                    <h3 class="heading">Filhotes</h3>
-                    <div class="heading-underline"></div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="os-animation" data-animation="fadeInUp">
-                        <div id="team-slider" class="owl-carousel owl-theme">
-                            <!-- Primeiro Card -->
-                            <div class="card text-center">
-                                <img class="card-img-top" data-toggle="modal" data-target="#modal-femea1"
-                                    src="./img/puppy/femea1/1.JPG" alt="" srcset="">
-                                <div class="card-body">
-                                    <h4>ABC - 001</h4>
-                                    <h5>Femêa</h5>
-                                    <a href="./img/puppy/femea1/1.JPG" data-lightbox="femea1"
-                                        data-title="Filhote ABC - 001">Galeria</a>
-                                    <!-- Filhote Femea 1 -->
-                                    <a href="./img/puppy/femea1/3.JPG" data-lightbox="femea1"></a>
-                                    <a href="./img/puppy/femea1/2.JPG" data-lightbox="femea1"></a>
-                                    <a href="./img/puppy/femea1/4.JPG" data-lightbox="femea1"></a>
-                                    <a href="./img/puppy/femea1/5.JPG" data-lightbox="femea1"></a>
-                                </div>
-                            </div>
-                            <div class="card text-center">
-                                <img class="card-img-top" data-toggle="modal" data-target="#modal-macho1"
-                                    src="./img/puppy/macho1/1.JPG" alt="" srcset="">
-                                <div class="card-body">
-                                    <h4>ABC - 002</h4>
-                                    <h5>Macho</h5>
-                                    <a href="./img/puppy/macho1/1.JPG" data-lightbox="macho1"
-                                        data-title="Filhote ABC - 002">Galeria</a>
-                                    <!-- Filhote Femea 1 -->
-                                    <a href="./img/puppy/macho1/2.JPG" data-lightbox="macho1" style="display: none"></a>
-                                    <a href="./img/puppy/macho1/3.JPG" data-lightbox="macho1" style="display: none"></a>
-                                    <a href="./img/puppy/macho1/4.JPG" data-lightbox="macho1" style="display: none"></a>
-                                    <a href="./img/puppy/macho1/5.JPG" data-lightbox="macho1" style="display: none"></a>
-                                </div>
-                            </div>
-                            <div class="card text-center">
-                                <img class="card-img-top" data-toggle="modal" data-target="#modal-macho2"
-                                    src="./img/puppy/macho2/1.JPG" alt="" srcset="">
-                                <div class="card-body">
-                                    <h4>ABC - 003</h4>
-                                    <h5>Macho</h5>
-                                    <a href="./img/puppy/macho2/1.JPG" data-lightbox="macho2"
-                                        data-title="Filhote ABC - 003">Galeria</a>
-                                    <!-- Filhote macho 2 -->
-                                    <a href="./img/puppy/macho2/2.JPG" data-lightbox="macho2" style="display: none"></a>
-                                    <a href="./img/puppy/macho2/3.JPG" data-lightbox="macho2" style="display: none"></a>
-                                    <a href="./img/puppy/macho2/4.JPG" data-lightbox="macho2" style="display: none"></a>
-                                    <a href="./img/puppy/macho2/5.JPG" data-lightbox="macho2" style="display: none"></a>
-                                </div>
-                            </div>
-                            <div class="card text-center">
-                                <img class="card-img-top" data-toggle="modal" data-target="#modal-macho3"
-                                    src="./img/puppy/macho3/2.JPG" alt="" srcset="">
-                                <div class="card-body">
-                                    <h4>ABC - 004</h4>
-                                    <h5>Macho</h5>
-                                    <a href="./img/puppy/macho3/2.JPG" data-lightbox="macho3"
-                                        data-title="ABC - 004 PIEBALD">Galeria</a>
-                                    <!-- Filhote macho 3 -->
-                                    <a href="./img/puppy/macho3/1.JPG" data-lightbox="macho3" style="display: none"></a>
-                                    <a href="./img/puppy/macho3/3.JPG" data-lightbox="macho3" style="display: none"></a>
-                                    <a href="./img/puppy/macho3/4.JPG" data-lightbox="macho3" style="display: none"></a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--- End Team Slider -->
-                    </div>
-                    <!--- End Animation -->
-                </div>
-                <!--- End col-md-12 -->
-
-            </div>
-            <!--- End of Row Light -->
-
-            <div class="fixed-wrap">
-                <div id="fixed-2">
-                </div>
-            </div>
-
-        </div>
-        <!--- End Fixed Background IMG Light -->
-
-    </div>
-    <!-- Armazenamento das modal dos filhotes-->
-    <div>
-        <!-- Modal Femea 1-->
-        <div class="modal fade " id="modal-femea1" tabindex="-1" role="dialog" aria-labelledby="Filhote ABC - 001"
-            aria-hidden="true">
-            <div class="modal-dialog " style="width: 90%">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Filhote ABC - 001</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <div class="container-fluid">
-                            <!-- Imagem do filhote  -->
-                            <img class="img-fluid" src="./img/puppy/femea1/1.JPG" alt="Femea 1" srcset="">
-
-                            <div id="accordion">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" data-toggle="collapse"
-                                                data-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
-                                                Pais
-                                            </button>
-                                        </h5>
+    
+                    <div class="container">
+                        <div class="os-animation" data-animation="fadeInUp">
+                            <div id="slider1" class="owl-carousel owl-theme">
+    
+                                <div class="card"><!-- Inicio do card (cartão onde fica o conteudo referente ao prato -->
+                                    <img src="/imagens/fundos/landingimage.jpg" alt="" class="card-img-top rounded-0"><!-- Aqui é onde é definida a imagem do cartão -->
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 1</h4><!-- Titulo do cartão -->
+                                        <h5 class="text-nuno">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5><!-- alguma descrição ou informação -->
+                                        <p class="border-top border-bottom py-3 my-3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p><!-- Algo que você queira adicionar ou pode apenas deixar em branco -->
+                                        <ul class="social"><!-- Referente aos links da rede social, caso você tenha alguma eles podem ser definidos aqui -->
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
                                     </div>
-
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                        data-parent="#accordion">
-                                        <div class="card-body d-flex justify-content-around">
-                                            <div>
-                                                <img class="img-circle" src="./img/adultDogs/IMG-20190817-WA0002.jpg"
-                                                    alt="Olaf Pai" srcset="">
-                                                <p>Pai</p>
-                                            </div>
-                                            <div>
-                                                <img style="margin-right: 0px;"
-                                                    src="./img/adultDogs/IMG-20190817-WA0002.jpg" alt="Olaf Mae"
-                                                    srcset="">
-                                                <p>mae</p>
-                                            </div>
-                                        </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida1.jpg" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 2</h4>
+                                        <h5 class="text-nuno">when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+                                        <p class="border-top border-bottom py-3 my-3"></p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo">
-                                                Informações
-                                            </button>
-                                        </h5>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida2.jpg" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 3</h4>
+                                        <h5 class="text-nuno">It has survived not only five centuries</h5>
+                                        <p class="border-top border-bottom py-3 my-3">but also the leap into electronic typesetting,</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
                                     </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Sexo <p class="lead">Masculino</p>
-                                                </li>
-                                                <li class="list-group-item">Nascimento <p class="lead">xx/xx/xx</p>
-                                                </li>
-                                                <li class="list-group-item">Cor <p class="lead">Vemelho/Branco</p>
-                                                </li>
-                                                <li class="list-group-item">RG <p class="lead text-danger">N/D</p>
-                                                </li>
-                                                <li class="list-group-item">Microchip <p class="lead text-danger">N/D
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida3.png" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 4</h4>
+                                        <h5 class="text-nuno">CFO</h5>
+                                        <p class="border-top border-bottom py-3 my-3">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse"
-                                                data-target="#collapseThree" aria-expanded="false"
-                                                aria-controls="collapseThree">
-                                                Informações de Saúde
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Vacina<p class="lead text-danger">Não Possui
-                                                    </p>
-                                                </li>
-                                                <li class="list-group-item">Vermifugado <p class="lead text-danger">Não
-                                                        Vermifugado</p>
-                                                </li>
-                                                <li class="list-group-item">Certificado CBKC(Pedigree) <p
-                                                        class="lead text-success">Possui</p>
-                                                </li>
-                                                <li class="list-group-item">Contrato de Garantia (Padrão e Saúde)<p
-                                                        class="lead text-success">Possui</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                                </div> <!-- Fim do cartão -->
+    
+                            </div> <!-- Fim do slider -->
+                        </div> <!-- Fim da animação -->
+                    </div><!-- Fim do container -->
+    
+                </div> <!-- Fim da linha -->
+    
+                <div class="fixed-wrap">
+                    <div class="fixed-p1"></div>
                 </div>
             </div>
+            <!-- Fim do plano de fundo da sessao -->
+    
         </div>
-    </div>
-    <!--- End Team Section -->
+        <!-- Fim da div desse pais ou regiao -->
 
-    <!-- End Adult Dogs Section -->
+        <!-- Inicio da sessao PAIS 2 -->
+	<div id="country2" class="offset">
 
-
-    <!-- Start Contact Section -->
-
-    <!--- Start Contact Section -->
-    <div id="contact" class="offset">
-
-        <footer>
-            <div class="row">
-
-                <div class="col-md-5">
-                    <img src="img/nuno.png" alt="">
-                    <p>Vendemos Cachorros sim!</p>
-                    <strong>Nossa localização</strong>
-                    <p>Rua imaginaria Numero bolinha<br>Cidade da fantazia, SantaMonica</p>
-                    <strong>Informações de contato</strong>
-                    <p>(xx)xxxxx-xxxx<br>email@email.com</p>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-
-                    <a href="#"><i class="fab fa-reddit-square"></i></a>
-
+            <!-- Inicio do plano de fundo fixo  -->
+            <div class="fixed">
+    
+                <div class="row light">
+    
+                    <div class="col-12 os-animation" data-animation="fadeInUp">
+                        <h3 class="heading">Comidas Italianas</h3>
+                        <div class="heading-underline"></div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="os-animation" data-animation="fadeInUp">
+                            <div id="slider2" class="owl-carousel owl-theme">
+    
+                                <div class="card"><!-- Inicio do card (cartão onde fica o conteudo referente ao prato -->
+                                    <img src="/imagens/fundos/landingimage.jpg" alt="" class="card-img-top rounded-0"><!-- Aqui é onde é definida a imagem do cartão -->
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 1</h4><!-- Titulo do cartão -->
+                                        <h5 class="text-nuno">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5><!-- alguma descrição ou informação -->
+                                        <p class="border-top border-bottom py-3 my-3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p><!-- Algo que você queira adicionar ou pode apenas deixar em branco -->
+                                        <ul class="social"><!-- Referente aos links da rede social, caso você tenha alguma eles podem ser definidos aqui -->
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida1.jpg" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 2</h4>
+                                        <h5 class="text-nuno">when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+                                        <p class="border-top border-bottom py-3 my-3"></p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida2.jpg" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 3</h4>
+                                        <h5 class="text-nuno">It has survived not only five centuries</h5>
+                                        <p class="border-top border-bottom py-3 my-3">but also the leap into electronic typesetting,</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida3.png" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 4</h4>
+                                        <h5 class="text-nuno">CFO</h5>
+                                        <p class="border-top border-bottom py-3 my-3">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                            </div> <!-- Fim do slider -->
+                        </div> <!-- Fim da animação -->
+                    </div><!-- Fim do container -->
+    
+                </div> <!-- Fim da linha -->
+    
+                <div class="fixed-wrap">
+                    <div class="fixed-p2"></div>
                 </div>
-
-                <div class="col-md-7">
-                    <h3>Entre em contato</h3>
-
-                    <form id="contact-form" method="post" action="contact.php">
-
-                        <div class="messages"></div>
-                        <div class="controls">
-
-                            <div class="form-group">
-                                <input id="form_name" type="text" name="name" class="form-control"
-                                    placeholder="Digite seu nome" required="required">
-                            </div>
-
-                            <div class="form-group">
-                                <input id="form_email" type="email" name="email" class="form-control"
-                                    placeholder="Digite seu email" required="required">
-                            </div>
-
-                            <div class="form-group">
-                                <textarea id="form_message" name="message" class="form-control"
-                                    placeholder="Adiciona sua mensagem, com informações sobre o filhote desejado"
-                                    rows="4" required="required"></textarea>
-                            </div>
-
-                            <input type="submit" class="btn btn-outline-light btn-sm" value="Enviar mensagem">
-
-                        </div>
-
-                    </form>
-
-                </div>
-
-                <hr class="socket">
-                &copy; Night Wolf FP
-
             </div>
-            <!--- End of Row -->
-        </footer>
-        <!--- End of Footer -->
+            <!-- Fim do plano de fundo da sessao -->
+    
+        </div>
+        <!-- Fim da div desse pais ou regiao -->
 
-    </div>
+        <!-- Inicio da sessao PAIS 3 -->
+	<div id="country3" class="offset">
 
-    <!--- End Contact Section -->
-    <!-- End Contact Section -->
+            <!-- Inicio do plano de fundo fixo  -->
+            <div class="fixed">
+    
+                <div class="row light">
+    
+                    <div class="col-12 os-animation" data-animation="fadeInUp">
+                        <h3 class="heading">Comidas Americanas</h3>
+                        <div class="heading-underline"></div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="os-animation" data-animation="fadeInUp">
+                            <div id="slider3" class="owl-carousel owl-theme">
+    
+                                <div class="card"><!-- Inicio do card (cartão onde fica o conteudo referente ao prato -->
+                                    <img src="/imagens/fundos/landingimage.jpg" alt="" class="card-img-top rounded-0"><!-- Aqui é onde é definida a imagem do cartão -->
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 1</h4><!-- Titulo do cartão -->
+                                        <h5 class="text-nuno">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5><!-- alguma descrição ou informação -->
+                                        <p class="border-top border-bottom py-3 my-3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p><!-- Algo que você queira adicionar ou pode apenas deixar em branco -->
+                                        <ul class="social"><!-- Referente aos links da rede social, caso você tenha alguma eles podem ser definidos aqui -->
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida1.jpg" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 2</h4>
+                                        <h5 class="text-nuno">when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+                                        <p class="border-top border-bottom py-3 my-3"></p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida2.jpg" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 3</h4>
+                                        <h5 class="text-nuno">It has survived not only five centuries</h5>
+                                        <p class="border-top border-bottom py-3 my-3">but also the leap into electronic typesetting,</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida3.png" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 4</h4>
+                                        <h5 class="text-nuno">CFO</h5>
+                                        <p class="border-top border-bottom py-3 my-3">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                            </div> <!-- Fim do slider -->
+                        </div> <!-- Fim da animação -->
+                    </div><!-- Fim do container -->
+    
+                </div> <!-- Fim da linha -->
+    
+                <div class="fixed-wrap">
+                    <div class="fixed-p3"></div>
+                </div>
+            </div>
+            <!-- Fim do plano de fundo da sessao -->
+    
+        </div>
+        <!-- Fim da div desse pais ou regiao -->
 
-    <!--- Script Source Files -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/waypoints.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.counterup.js"></script>
-    <script src="js/validator.js"></script>
-    <script src="js/contact.js"></script>
-    <!--- End of Script Source Files -->
+        <!-- Inicio da sessao PAIS 4 -->
+	<div id="country4" class="offset">
+
+            <!-- Inicio do plano de fundo fixo  -->
+            <div class="fixed">
+    
+                <div class="row light">
+    
+                    <div class="col-12 os-animation" data-animation="fadeInUp">
+                        <h3 class="heading">Comidas francesas</h3>
+                        <div class="heading-underline"></div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="os-animation" data-animation="fadeInUp">
+                            <div id="slider4" class="owl-carousel owl-theme">
+    
+                                <div class="card"><!-- Inicio do card (cartão onde fica o conteudo referente ao prato -->
+                                    <img src="/imagens/fundos/landingimage.jpg" alt="" class="card-img-top rounded-0"><!-- Aqui é onde é definida a imagem do cartão -->
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 1</h4><!-- Titulo do cartão -->
+                                        <h5 class="text-nuno">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5><!-- alguma descrição ou informação -->
+                                        <p class="border-top border-bottom py-3 my-3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p><!-- Algo que você queira adicionar ou pode apenas deixar em branco -->
+                                        <ul class="social"><!-- Referente aos links da rede social, caso você tenha alguma eles podem ser definidos aqui -->
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida1.jpg" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 2</h4>
+                                        <h5 class="text-nuno">when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+                                        <p class="border-top border-bottom py-3 my-3"></p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida2.jpg" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 3</h4>
+                                        <h5 class="text-nuno">It has survived not only five centuries</h5>
+                                        <p class="border-top border-bottom py-3 my-3">but also the leap into electronic typesetting,</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                                <div class="card"><!-- Inicio do cartão -->
+                                    <img src="/imagens/comidas/japonesas/comida3.png" alt="" class="card-img-top rounded-0">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold">Prato 4</h4>
+                                        <h5 class="text-nuno">CFO</h5>
+                                        <p class="border-top border-bottom py-3 my-3">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- Fim do cartão -->
+    
+                            </div> <!-- Fim do slider -->
+                        </div> <!-- Fim da animação -->
+                    </div><!-- Fim do container -->
+    
+                </div> <!-- Fim da linha -->
+    
+                <div class="fixed-wrap">
+                    <div class="fixed-p4"></div>
+                </div>
+            </div>
+            <!-- Fim do plano de fundo da sessao -->
+    
+        </div>
+        <!-- Fim da div desse pais ou regiao -->
+
+        <!-- Start Contact Section -->
+	<div id="contact" class="offset">
+
+            <div class="container-fluid footer px-0">
+                <div class="row outer">
+    
+                    <div class="container">
+                        <div class="row py-3">
+    
+                            <div class="col-md-5 px-0 pr-md-3">
+                                <img src="/food_96px.png" alt="">
+                                <p>Somos um restaurante de algum lugar e estamos abertos de segunda a sexta das 8:00 as 22:00</p>
+                                <strong>Nossa localização</strong>
+                                <p>Rua dos sonhos N 2000 <br>São Paulo</p>
+                                <strong>Informações para contato</strong>
+                                <p>(11) 9 9999-9999<br>email@email.com</p>
+                                <ul class="social pt-3">
+                                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fab fa-youtube-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div> <!-- End Column -->
+    
+                        </div> <!-- End Row -->
+                    </div> <!-- End Container -->
+    
+                    <hr class="socket">
+                    &copy; Ishibento.com.br.
+    
+                </div> <!-- End Row Outer -->
+            </div> <!-- End Container Fluid -->
+            
+        </div>
+        <!-- End Contact Section -->
+
+<!-- Script Source Files -->
+
+
+	<!-- Plugins.js -->
+	<script src="js/plugins.js"></script>
+	<!-- Waypoints https://cdnjs.com/libraries/waypoints
+		https://github.com/imakewebthings/waypoints -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.11.2/js/all.js -->
+	<script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+	<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+		http://owlcarousel2.github.io/OwlCarousel2/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<!-- jQuery CounterUp https://www.jsdelivr.com/package/npm/jquery.counterup
+		https://github.com/bfintal/Counter-Up2 -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+	<!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+	
+	<!-- End of Script Source Files -->
 </body>
-
 </html>
