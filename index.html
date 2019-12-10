@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="shortcut icon" href="/food_96px.png">
-<!-- Bootstrap CSS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!-- Style.css -->
-<link rel="stylesheet" href="/css/style.css">
-<!-- Plugins.css -->
-<link rel="stylesheet" href="/css/plugins.css">
-<!-- Google Fonts https://fonts.google.com/ -->
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-<!-- Animate.css https://cdnjs.com/libraries/animate.css/
-    https://daneden.github.io/animate.css/ -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/food_96px.png">
+    <!-- Bootstrap CSS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Style.css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Plugins.css -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- Google Fonts https://fonts.google.com/ -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Animate.css https://cdnjs.com/libraries/animate.css/
+		https://daneden.github.io/animate.css/ -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+	<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
 		http://owlcarousel2.github.io/OwlCarousel2/ -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-<!-- jQuery https://code.jquery.com/ -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
-<!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<!-- jQuery https://code.jquery.com/ -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <title>Cozinha</title>
 </head>
@@ -488,6 +489,75 @@ crossorigin="anonymous"></script>
         </div>
         <!-- Fim da div desse pais ou regiao -->
 
+        <!-- Start Clients Section -->
+	<div id="clients" class="offset">
+
+		<div class="row py-5">
+
+			<div class="col-12 os-animation" data-animation="fadeInUp">
+				<h3 class="heading">Nossos Parceiros</h3>
+				<div class="heading-underline"></div>
+			</div>
+
+			<div class="col-12 px-xl-5 os-animation" data-animation="fadeInUp">
+				<div id="clients-carousel" class="owl-carousel owl-theme">
+
+					<div class="row clients px-3 px-md-4">
+						<div class="col-lg-4 my-auto">
+                            <a href="https://www.google.com.br"><!-- Link na imagem, quando a imagem é clicada ela abre a pagina presente no href-->
+                                <img src="/imagens/comidas/japonesas/comida1.jpg" alt="" srcset=""><!-- Imagem que sera exibida ao inves do link-->
+                            </a>
+						</div>
+						<div class="col-lg-8">
+							<blockquote class="text-justify">
+								<i class="fas fa-quote-left"></i> <!-- Descrição sobre esse parceiro-->
+								Seu texto sobre ele Aqui
+								<hr class="clients-hr">
+								<cite>&#8212; Sonia, Confeiteira</cite> <!-- Nome e profissao do parceiro -->
+							</blockquote>
+						</div>
+					</div>
+
+					<div class="row clients px-3 px-md-4">
+						<div class="col-lg-4 my-auto">
+							<a href="https://facebook.com">
+                                <img src="/imagens/comidas/japonesas/comida2.jpg" alt="" srcset="">
+                            </a>
+						</div>
+						<div class="col-lg-8">
+							<blockquote class="text-justify">
+								<i class="fas fa-quote-left"></i>
+								Seu texto sobre ele aqui
+								<hr class="clients-hr">
+								<cite>&#8212; Rachel, Padeira</cite>
+							</blockquote>
+						</div>
+					</div>
+
+					<div class="row clients px-3 px-md-4">
+						<div class="col-lg-4 my-auto">
+							<a href="https://twitter.com/">
+                                <img src="/imagens/comidas/japonesas/comida3.jpg" alt="" srcset="">
+                            </a>
+						</div>
+						<div class="col-lg-8">
+							<blockquote class="text-justify">
+								<i class="fas fa-quote-left"></i>
+								Seu texto sobre ele aqui
+								<hr class="clients-hr">
+								<cite>&#8212; Edijanio, Aspirante a desenvolvedor</cite>
+							</blockquote>
+						</div>
+					</div>
+
+				</div> <!-- End Carousel -->
+			</div> <!-- End Column -->
+
+		</div> <!-- End Row -->
+
+	</div>
+	<!-- End of Clients Section -->
+
         <!-- Start Contact Section -->
 	<div id="contact" class="offset">
 
@@ -505,11 +575,12 @@ crossorigin="anonymous"></script>
                                 <strong>Informações para contato</strong>
                                 <p>(11) 9 9999-9999<br>email@email.com</p>
                                 <ul class="social pt-3">
-                                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-youtube-square"></i></a></li>
-                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                    <!-- Dentro dos href="" você coloca o endereço da sua pagina-->
+                                    <li><a href="https://www.facebook.com.br"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href="https://www.instagram.com/?hl=pt-br"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a></li>
+                                    <li><a href="https://br.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                                 </ul>
                             </div> <!-- End Column -->
     
@@ -525,6 +596,7 @@ crossorigin="anonymous"></script>
         </div>
         <!-- End Contact Section -->
 
+        
 <!-- Script Source Files -->
 
 
@@ -535,6 +607,8 @@ crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 	<!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.11.2/js/all.js -->
 	<script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
 	<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
 		http://owlcarousel2.github.io/OwlCarousel2/ -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
